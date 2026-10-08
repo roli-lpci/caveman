@@ -29,4 +29,4 @@ removed it after Chrome Web Store review couldn't reproduce "compress prompt loc
 - Package: `npm run package` runs both suites, then writes `dist/caveman-browser-<version>.zip`. Staged set uses explicit allowlist in `scripts/verify-extension-stage.mjs`, cross-checked against manifest/CSS/HTML references.
 - Composer + send selectors live in the `SITES` map in `src/caveman.js`; a site redesign means updating it (each entry keeps aria-label fallbacks so one rename doesn't break it).
 
-See ../../CLAUDE.md (root)
+See ../CLAUDE.md (root)

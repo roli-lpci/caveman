@@ -11,7 +11,7 @@ templates. Recipes are DATA, not code — the collapse decision applied to app f
   Fields: `id`, `display_name`, `lang` (`ts`/`python`/`bash`), `wire_protocol`, `note`, `code`.
 - `compile.mjs` — zero-dep build-time compiler: validates every recipe (fail-closed) and
   emits `recipes.json` (published registry) + two EMBEDDED copies —
-  `../cli/src/recipes.generated.ts` (the CLI stays zero-runtime-dep) and
+  `../packages/cli/src/recipes.generated.ts` (the CLI stays zero-runtime-dep) and
   the web app's embedded copy (cloud may consume public data; the reverse import is forbidden).
 - `recipes.json` — generated; do not hand-edit.
 
@@ -24,4 +24,4 @@ templates. Recipes are DATA, not code — the collapse decision applied to app f
 - Run from the CLI build/test: `node ../integrations/compile.mjs`. The generated files are
   committed and must stay in sync — change a recipe and regenerate all three artifacts.
 
-See ../../CLAUDE.md (root) · ../agents/CLAUDE.md (the agent twin) · ../cli/CLAUDE.md
+See ../CLAUDE.md (root) · ../docs/technical/agent-profile-registry.md (the agent twin) · ../packages/cli/CLAUDE.md

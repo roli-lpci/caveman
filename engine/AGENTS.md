@@ -40,4 +40,4 @@ is what the proxy, CLI, SDKs, MCP, and WASM build all share. Everything it repor
 - **cgo**: full code compression (Python/JS/TS) needs the tree-sitter build; the cgo-free build compresses Go only. The embedded eval fixtures cover all three under cgo.
 - **boundary**: this is `public/` — never import `cloud/…`. `make check-boundaries` enforces it.
 
-See ../../CLAUDE.md (root)
+See ../CLAUDE.md (root)

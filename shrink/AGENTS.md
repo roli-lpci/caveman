@@ -40,4 +40,4 @@ adversarial conformance tests lock these construction surfaces; over-keep is saf
   `caveman-shrink recover`; failure to open storage makes library `Shrink` return an error, while
   the CLI catches that error and forwards the original bytes with no handle.
 
-See ../../CLAUDE.md (root) · ../engine/CLAUDE.md
+See ../CLAUDE.md (root) · ../engine/CLAUDE.md

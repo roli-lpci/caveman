@@ -34,4 +34,4 @@ code — data + schema only.
 - `batch_discount_fraction: 0.50` means 50 % off, not 50 % of the listed rate — keep that interpretation consistent.
 - `build`/`lint`/`test` scripts in `package.json` only parse the schema JSON; they do NOT validate catalog YAML.
 
-See ../../../CLAUDE.md (root)
+See ../../CLAUDE.md (root)

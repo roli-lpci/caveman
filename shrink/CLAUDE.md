@@ -46,4 +46,4 @@ tool and parameter names, types, enums, required — and every **argument-constr
 - **inferred-only** — token counts are estimates via the engine's offline counter; never `verified`, never re-projected.
 - **reversible for real** — a compressing shrink writes the exact original to the **durable** store (`engine.Compress` commits the recovery row before it publishes transformed bytes), so a printed handle resolves later, from a separate process, via `Recover` / `caveman-shrink recover`. It is NOT an in-memory store discarded on return — that minted handles that were unresolvable the instant `Shrink` returned. If the durable store cannot be opened, `Shrink` returns an error and the CLI forwards the original bytes: no handle, no reversibility claim.
 
-See ../../CLAUDE.md (root) · ../engine/CLAUDE.md
+See ../CLAUDE.md (root) · ../engine/CLAUDE.md

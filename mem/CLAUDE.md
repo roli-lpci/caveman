@@ -34,4 +34,4 @@ served through `mcp.NewServer` so the framing matches caveman-mcp exactly.
 - **inferred-only** — `tokens_added`, score, and basis are inferred estimates; never `verified`.
 - **reversible** — a compressed recall hit carries a CCR `recovery_handle`; `Recover` returns the byte-exact original.
 
-See ../../CLAUDE.md (root) · ../engine/CLAUDE.md · ../mcp/CLAUDE.md
+See ../CLAUDE.md (root) · ../engine/CLAUDE.md · ../mcp/CLAUDE.md

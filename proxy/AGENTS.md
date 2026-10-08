@@ -99,4 +99,4 @@ the managed gateway (the managed gateway imports them from here). `caveman start
 - **pixel mode**: S4 lossy text→PNG (`pxpipe` port). Default allowlist is `claude-fable-5,gpt-5.6` via `CAVE_PIXEL_MODELS`; savings stay inferred-only. Renders keep the compress rules: the first decision for a text (render or text) is re-sent on every turn, a raw pin keeps the conversation text, and a NEW render is remembered only once its request goes out, with the original stored in CCR and the splice holding. If either fails, the new content goes out as text and records that, and earlier renders still go. A rendered block's `cache_control` moves to its last image. An Anthropic request carries at most 20 images, client images included (`anthropicManyImages`): past 20 the API rejects any image over 2000 px, and the renders are 2573 px wide, so a new render past the cap stays text.
 - **boundary**: this is public code — it must never import the managed-cloud lane. `make check-boundaries` enforces it.
 
-See ../../CLAUDE.md (root)
+See ../CLAUDE.md (root)

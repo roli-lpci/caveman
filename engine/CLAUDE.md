@@ -48,4 +48,4 @@ is what the proxy, CLI, SDKs, MCP, and WASM build all share. Everything it repor
 - **cgo**: full code compression (Python/JS/TS) needs the tree-sitter build; the cgo-free build compresses Go only. The embedded eval fixtures cover all three under cgo. Release `caveman-proxy`/`caveman-engine` are cgo builds via the pinned zig in `scripts/build-release-binaries.mjs`; `TestReleaseShape*` carry no build tag on purpose and fail under `CGO_ENABLED=0`, and engine-ci's `release-shape` lane runs them with the release flags.
 - **boundary**: this is `public/` — never import `cloud/…`. `make check-boundaries` enforces it.
 
-See ../../CLAUDE.md (root)
+See ../CLAUDE.md (root)
